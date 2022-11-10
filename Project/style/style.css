@@ -113,3 +113,118 @@ body{
     padding: 30px 0 106px;
 
 }
+
+.categories{
+background-color:rgba(0, 161, 198, 0.07);
+padding: 108px 0 110px;
+}
+
+.categories_main{
+    text-align: center;
+   
+}
+
+.categories_title_1{
+    font-size: 22px;
+    line-height: 34px;
+    color: #2B292D;
+    font-weight: bold;
+    margin-bottom: 24px;
+    
+}
+
+.categories_title_2{
+    font-size: 56px;
+    line-height: 56px;
+    color: #2B292D;
+    font-weight: bold;
+    max-width: 555px;
+    margin: 0 auto 30px;
+
+}
+
+.categories_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    max-width: 555px;
+    margin: 0 auto 34px;
+
+} 
+
+.categories_button1{
+    width: 160px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 10px;
+}
+
+.categories_button2{
+    width: 160px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    line-height: 13px;
+    color: #000000;
+    border: none;
+
+}
+ 
+.grid_1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 31px;
+    margin-top: 111px;
+}
+
+.group{
+    padding: 90px 0 91px;
+    text-align: center;
+
+}
+
+.group_title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.group_text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #172342;
+    max-width: 554px;
+    margin: 0 auto;
+    margin-bottom: 97px;
+}
+
+.grid_2{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 42px;
+    column-gap: 50px ;
+}
+
+.item_2{
+    background-color: pink;
+}
+
+.item_2:nth-child(3), .item_2:nth-child(4) {
+    grid-row: span 2;
+
+}
+
+
