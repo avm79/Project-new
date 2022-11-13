@@ -313,11 +313,11 @@ padding: 108px 0 110px;
 
 }
 
-.item_1 p:hover{
+.item_1:hover .item_1_text{
     color: white;
+    transition: 1s;
 
 }
-
 
 .group{
     padding: 90px 0 91px;
