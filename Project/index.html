@@ -41,8 +41,8 @@
     </header>
 
     <section class="base">
-        <div class="container flex">
-            <div class="base_main">
+        <div class="container flex flex_base-column">
+            <div class="base_info base_info-margin"> 
                 <h5 class="base_title">
                     What is it about?
 
@@ -52,7 +52,7 @@
                 </p>
 
             </div>
-            <div class="base_main">
+            <div class="base_info ">
                 <h5 class="base_title">
                     Who is it for?
 
@@ -65,19 +65,19 @@
     </section>
     
     <section class="logos">
-        <ul class="container flex">
-                <li><a href="#"><img src="./img/logos/new.png" alt="logo"></a></li>
-                <li><a href="#"><img src="./img/logos/forbes.png" alt="logo"></a></li>
-                <li><a href="#"><img src="./img/logos/apple.png" alt="logo"></a></li>
-                <li><a href="#"><img src="./img/logos/mashable.png" alt="logo"></a></li>
-                <li><a href="#"><img src="./img/logos/wsj.png" alt="logo"></a></li>
-                <li><a href="#"><img src="./img/logos/google.png" alt="logo"></a></li>
-        </ul>
+        <div class="logos_grid container">
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/new.png" alt="logo"></a></div>
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/forbes.png" alt="logo"></a></div>
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/apple.png" alt="logo"></a></div>
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/mashable.png" alt="logo"></a></div>
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/wsj.png" alt="logo"></a></div>
+                <div class="logos_item"><a href="#"><img class="logos_img" src="./img/logos/google.png" alt="logo"></a></div>
+        </div>
     </section>
    
     <section class="inbox">
-        <div class="container flex">
-            <div class="container-image">
+        <div class="container flex flex_inbox-column">
+            <div class="container-image animations">
                 <img class="container-image_img" src="./img/inbox/ouch.svg" alt="img_inbox">
 
             </div>
@@ -111,8 +111,8 @@
         </div>
     </section>
 
-    <section class="box">
-        <div class="container flex">
+    <section class="communication">
+        <div class="container flex flex_communication-column">
             <div class="info">
                 <p class="info_pretitle info_pretitle-blue">
                     Communicate Better
@@ -126,88 +126,87 @@
                 <button class="button">Get Started</button>
                 
             </div>
-            <div class="container-image">
+            <div class="container-image container-image-margin animations">
                 <img class="container-image_img" src="./img/box/ouch.png" alt="img_box">
 
             </div>
         </div>
        
-        <div class="container flex">
-            <div class="info-block">
-                <p class="info-block_text1">
-                    <span class="info-block_text1-bold"> Subscriptions.</span> Foundation works with the tools and services you already use every day.
+        <div class="container flex flex_communication-column display_communicaton-none">
+            <div class="communication-block">
+                <p class="communication_text">
+                    <span class="communication_text-bold"> Subscriptions.</span> Foundation works with the tools and services you already use every day.
                 </p>
-                <p class="info-block_text2">
-                    <a class="info-block_link" href="#">Learn more about subscriptions</a>
-                </p>
-
-            </div>
-            <div class="info-block">
-                <p class="info-block_text1">
-                    <span class="info-block_text1-bold"> Felxible Hours.</span> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
-                </p>
-                <p class="info-block_text2">
-                    <a class="info-block_link" href="#">Get more info about hours</a>
+                <p>
+                    <a class="communication_link" href="#">Learn more about subscriptions</a>
                 </p>
 
             </div>
-            <div class="info-block">
-                <p class="info-block_text1">
-                    <span class="info-block_text1-bold"> Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data. 
+            <div class="communication-block">
+                <p class="communication_text">
+                    <span class="communication_text-bold"> Felxible Hours.</span> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
                 </p>
-                <p class="info-block_text2">
-                    <a class="info-block_link" href="#">Communication guidelines</a>
+                <p>
+                    <a class="communication_link" href="#">Get more info about hours</a>
+                </p>
+
+            </div>
+            <div class="communication-block">
+                <p class="communication_text">
+                    <span class="communication_text-bold"> Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your data. 
+                </p>
+                <p>
+                    <a class="communication_link" href="#">Communication guidelines</a>
                 </p>
 
             </div>
         </div>
     </section>
 
-    <section class="categories">
+    <section class="visitors">
         <div class="container">
-            <div class="categories_main">
-            
-                <h5 class="categories_title_1">
+            <div class="info info_center">
+                <p class="info_pretitle info_pretitle-black info_pretitle-margin">
                     Engage Visitors
-                </h5>
-                <h3 class="categories_title_2">
+                </p>
+                <h3 class="info_title info_title-max-width info_title-margin">
                     Understand your audience
                 </h3>
-                <p class="categories_text">
+                <p class="info_text info_text-max-width info_text-margin">
                     Early stage company? Eligible applicants get all of our products for just $49 a month.
-
                 </p>
-                <button class="button">
-                    Get Started
-                </button>
-
-                <button class="categories_button">
-                    Learn More
-                </button>
+                <div class="flex flex_button-column button-group">
+                    <button class="button button-width">
+                        Get Started
+                    </button>
+                    <button class="button button-color button-width">
+                        Learn More
+                    </button>
+                </div>
             </div>
-           
-            <div class="grid_1">
-                <div class="item_1">
+                                  
+            <div class="visitors_grid">
+                <div class="visitors_item">
                     <img src="./img/grid_1/image_1.png" alt="image_1">
-                    <p class="item_1_text">
+                    <p class="visitors_text">
                         Developers
                     </p>
                 </div>
-                <div class="item_1">
+                <div class="visitors_item">
                     <img src="./img/grid_1/image_2.png" alt="image_2">
-                    <p class="item_1_text">
+                    <p class="visitors_text">
                         Entertainment
                     </p>
                 </div>
-                <div class="item_1">
+                <div class="visitors_item">
                     <img src="./img/grid_1/image_3.png" alt="image_3">
-                    <p class="item_1_text">
+                    <p class="visitors_text">
                         Athletes
                     </p>
                 </div>
-                <div class="item_1">
+                <div class="visitors_item">
                     <img src="./img/grid_1/image_4.png" alt="image_4">
-                    <p class="item_1_text">
+                    <p class="visitors_text">
                         Creators
                     </p>
                 </div> 
@@ -215,22 +214,65 @@
         </div>
     </section>
 
-    <section class="container group">
-        <h3 class="group_title">
-            All Surfaces Covered
-        </h3>
-        <p class="group_text">
-            IOON kills bacteria on your hands, food, tables, laptops, you name it
-        </p>
-        <div class="grid_2">
-            <div class="item_2"><img src="./img/grid-2/image_1.png" alt="image_1"></div>
-            <div class="item_2"><img src="./img/grid-2/image_2.png" alt="image_2"></div>
-            <div class="item_2"><img src="./img/grid-2/image_3.png" alt="image_3"></div>
-            <div class="item_2"><img src="./img/grid-2/image_4.png" alt="image_4"></div>
-            <div class="item_2"><img src="./img/grid-2/image_5.png" alt="image_5"></div>
-            <div class="item_2"><img src="./img/grid-2/image_6.png" alt="image_6"></div>
-            <div class="item_2"><img src="./img/grid-2/image_7.png" alt="image_7"></div>
+    <section class="gallery">
+        <div class="container">
+            <h3 class="gallery_title">
+                All Surfaces Covered
+            </h3>
+            <p class="gallery_text">
+                 IOON kills bacteria on your hands, food, tables, laptops, you name it
+            </p>
+            <div class="gallery_grid">
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_1.png" alt="image_1"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_2.png" alt="image_2"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_3.png" alt="image_3"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_4.png" alt="image_4"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_5.png" alt="image_5"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_6.png" alt="image_6"></div>
+                <div class="gallery_item"><img class="gallery_img" src="./img/grid-2/image_7.png" alt="image_7"></div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="start-trial">
+        <div class="container flex_start-trial-evenly flex_start-trial-column start-trial_block">
+            <div start-trial_image >
+                <img src="./img/start-trial/window.png" alt="window">
+
+            </div>
+            <div class="start-trial_info">
+                <h4 class="start-trial_title">
+                    Start your free trial.
+                </h4>
+                <p class="start-trial_text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+
+                <input class="input" type="email" placeholder="Enter your email">
+                
+                <button class="button button-width">
+                    Get Started
+                </button>
+
+                <div class="flex_start-trial-start start-trial_content">               
+                    <p class="start-trial_terms">
+                        Free 14-day trial · Easy setup · Cancel any time. Check out <a class="start-trial_terms-blue" href="#">Terms of Use.</a>
+                    </p>
+
+                    <label>
+                        <input class="checkbox" type="checkbox">
+                        <span class="fake"></span>
+                    </label>
+                </div> 
+
+            </div>
+
+
         </div>
+
+
+
+
     </section>
 </body>
 </html>
