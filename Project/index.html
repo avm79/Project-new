@@ -25,20 +25,58 @@
                     </p>
                 </div>
             </div>
-            <nav class="header_nav flex">
-                <ul class="header_ul flex">
-                    <li class="header_li">
-                        <a class="header_link" href="#">Home</a>
-                    </li>
-                    <li class="header_li">
-                        <a class="header_link" href="#">Stories</a>
-                    </li>
-                </ul>
-                <button class="button">Get Started</button>
-            </nav>
+            <div class="menu">
+                <input checked type="checkbox" class="menu_checkbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                <nav class="header_nav flex">
+                    <ul class="header_ul flex">
+                         <li class="header_li">
+                            <a class="header_link" href="#">Home</a>
+                        </li>
+                        <li class="header_li">
+                            <a class="header_link" href="#">Stories</a>
+                        </li>
+                    </ul>
+                    <button class="button">
+                        Get Started
+                    </button>
+                </nav>
+            </div>
 
         </div>
     </header>
+
+    <section class="main">
+        <div class="container flex main_container">
+            <div class="main_text-block">
+                <h1 class="main_title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="main_text">
+                    Create live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div class=" flex flex_button-column main_button">
+                    <button class="button button-width">
+                        Get Started
+                    </button>
+                    <button class="button button_color-blue button-width">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img class="main-image_img"  src="./img/main/ouch.png" alt="main_img">
+            </div>
+
+        </div>
+
+    </section>
+
+
 
     <section class="base">
         <div class="container flex flex_base-column">
@@ -179,7 +217,7 @@
                     <button class="button button-width">
                         Get Started
                     </button>
-                    <button class="button button-color button-width">
+                    <button class="button button_color-black button-width">
                         Learn More
                     </button>
                 </div>
@@ -254,25 +292,27 @@
                     Get Started
                 </button>
 
-                <div class="flex_start-trial-start start-trial_content">               
+                <div class="start-trial_content">
+                                        
                     <p class="start-trial_terms">
                         Free 14-day trial · Easy setup · Cancel any time. Check out <a class="start-trial_terms-blue" href="#">Terms of Use.</a>
                     </p>
 
-                    <label>
-                        <input class="checkbox" type="checkbox">
-                        <span class="fake"></span>
-                    </label>
+                    <div>
+                        <label>
+                            <span class="text">I agree</span>
+                            <input class="checkbox" type="checkbox">
+                            <span class="fake"></span>
+                        </label>
+                    </div>
+                                      
                 </div> 
 
             </div>
 
-
         </div>
-
-
-
-
     </section>
+
+    
 </body>
 </html>

@@ -83,8 +83,75 @@ body{
     cursor: pointer;
     transition-duration: 500ms;
     transition-timing-function: linear;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #192eee;;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #1395b6;;
 }
+
+.check{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 4px;
+}
+
+.menu_checkbox, .check-wrapper{
+    display: none;
+}
+
+
+.main{
+    background-color: #F3C6BD;
+    position: relative;
+    padding-bottom: 126px;
+}
+
+.main_container > div:first-of-type{
+    z-index: 1;
+}
+
+.main_container > div:last-of-type{
+    z-index: 0;
+    position: absolute;
+    right: 25px;
+}
+
+.main_title{
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    color: #2B292D;
+    font-weight: bold;
+    max-width: 754px;
+    margin-bottom: 34px;
+}
+
+.main_text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    max-width: 456px;
+    margin-bottom: 54px;
+}
+
+.button_color-blue{
+    background-color: white;
+    color: #3040C4;
+}
+
+.button_color-blue:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    background: rgb(211, 192, 87);
+}
+
+.main_button{
+    max-width: 330px;
+    margin-left: 0;
+}
+
 
 .base{
     background-color: #F4F5F7;
@@ -203,7 +270,6 @@ body{
     animation-iteration-count: 3;
     position: relative;
 }
-   
 
 @keyframes toLeft{
     0%{
@@ -256,7 +322,6 @@ body{
 
 }
 
-
 .communication{
     padding: 110px 0 105px;
 }
@@ -287,7 +352,6 @@ body{
 .communication_text-bold{
     font-weight: 700;
 }
-
 
 .visitors{
 background-color:rgba(0, 161, 198, 0.07);
@@ -324,23 +388,19 @@ padding: 108px 0 110px;
     margin: 0 auto 0;
 }
 
-.button-color{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+.button_color-black{
+    background-color: #FFFFFF;
     color: #000000;
-   
    
 }
 
-.button-color:hover{
+.button_color-black:hover{
     cursor: pointer;
     transition-duration: 500ms;
     transition-timing-function: linear;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), rgb(230, 230, 240);
+    background: rgb(211, 192, 87);
 }
 
-.categories_button:hover{
-    cursor: pointer;
-}
  
 .visitors_grid{
     display: grid;
@@ -471,15 +531,15 @@ padding: 108px 0 110px;
     font-size: 14px;
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
-    
+    margin-bottom: 10px;
+}
+
+.text{
+    color: blue;
 }
 
 .start-trial_terms-blue{
     color: #3142C6;
-}
-.flex_start-trial-start{
-    display: flex;
-    justify-content: flex-start;
 }
 
 .fake{
@@ -535,9 +595,6 @@ padding: 108px 0 110px;
 
 
 
-
-
-
 @media screen and (max-width:1200px){
     .container{
         max-width: 1040px;
@@ -550,6 +607,9 @@ padding: 108px 0 110px;
 
 
 
+
+
+
 @media screen and (max-width:1090px){
     .container{
         max-width: 750px;
@@ -558,15 +618,141 @@ padding: 108px 0 110px;
     .logo_text{
         display: none;
     }
+    .menu_checkbox, .check-wrapper{
+        display: block;
+
+    }
 
     .header_nav{
         display: none;
     }
 
+    .menu{
+        position: relative;
+    }
+
+    .check{
+        transition: 300ms;
+    }
+
+    .menu_checkbox{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .check-wrapper{
+        position: relative;
+        z-index: 1;
+    }
+
+    .menu_checkbox:checked ~ .check-wrapper > .check:first-of-type{
+        transform: rotate(45deg) translate(2px, 0px);
+        transform-origin: bottom left;
+    }
+
+    .menu_checkbox:checked ~ .check-wrapper > .check:nth-of-type(2){
+        opacity: 0;
+    }
+
+    .menu_checkbox:checked ~ .check-wrapper > .check:last-of-type{
+        transform: rotate(-45deg) translate(6px, -11px);
+        transform-origin: bottom right;
+    }
+
+    .menu_checkbox:checked ~ .header_nav{
+        display: block;
+        position: fixed;
+        background-color: beige;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 40px;
+        
+    }
+
+    
+    .header_ul{
+        flex-direction: column;
+        margin-right: 0;
+           
+    }
+
+    .header_li{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header_li:first-of-type{
+        margin-right: 0;
+        
+    }
+
+   
+
+
+
+
+
+
+
+
 
     .flex_inbox-column{
         flex-direction: column-reverse;
     }
+
+
+
+    .main{
+        padding-bottom: 0;
+    }   
+
+    .main_container{
+        flex-direction: column;
+        
+    }
+
+               
+    .main_container > div:last-of-type{
+         position: static;
+       
+        
+    }
+
+      
+        
+    .main_title{
+        font-size: 60px;
+        line-height: 72px;
+        max-width: 525px;
+        margin-bottom: 15px;
+        
+    }
+    
+    .main_text{
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 355px;
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
 
     .inbox{
         padding: 56px 0 69px;
@@ -794,10 +980,15 @@ padding: 108px 0 110px;
 
     }
 
+    .start-trial_content div{
+        text-align: start;
+    }
+
     .start-trial_terms{
         max-width: 431px;
         text-align: start;
     }
+
 
 }
 
@@ -861,6 +1052,52 @@ padding: 108px 0 110px;
     .logo img{
         margin-right: 13px;
     }
+
+
+
+
+
+    .main{
+        padding: 35px 0 36px;
+    } 
+    
+    .main_title {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3125px;
+        margin-bottom: 24px;
+    }
+
+    .main_text {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    .main_button{
+        height: 108px;
+        
+    }
+
+    .main-image_img{
+        width: 100%;
+        margin-top: 33px;
+
+    }
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
 
     .inbox{
         padding: 50px 0 48px;
