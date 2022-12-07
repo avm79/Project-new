@@ -27,8 +27,8 @@
                     </p>
                 </div>
             </div>
-            <div class="menu">
-                <input checked type="checkbox" class="menu_checkbox">
+            <div id="menuToggle" class="menu">
+                <input id="toggleCheckbox" checked type="checkbox" class="menu_checkbox">
                 <div class="check-wrapper">
                     <div class="check"></div>
                     <div class="check"></div>
@@ -73,11 +73,8 @@
             <div>
                 <img class="main-image_img"  src="./img/main/ouch.png" alt="main_img">
             </div>
-
         </div>
-
     </section>
-
 
     <section class="base">
         <div class="container flex flex_base-column">
@@ -114,7 +111,6 @@
         </div>
     </section>
 
-
     <section class="customers">
         <div class="container flex flex_customers-column">
             <div class="info">
@@ -127,58 +123,64 @@
                 <p class="info_text">
                     Send one-off and automated email, push, and in-app messages to people. Create better stories.
                 </p>
-            
-                <div class="customers_new flex_customers-start">
-                    <img class="customers_icon" src="./img/customers/Icon_1.svg" alt="icon_1">
-                    <p class="customers_new_text">
-                        <a href="">Acquire new customers</a>
+
+                <div class="customers_items">
+                    <div class="customers_subtitle flex_customers-start">
+                        <img class="customers_icon" src="./img/customers/Icon_1.svg" alt="icon_1">
+                        <p class="customers_subtitle_text">
+                            Acquire new customers
+                        </p>
+                    </div>
+
+                    <p class="customers_text">
+                        Everything you need to start building – including open-source code, documentation.
                     </p>
+                    <div class="customers_line">
+                    </div>
                 </div>
 
-                <p class="customers_text">
-                    Everything you need to start building – including open-source code, documentation.
-                </p>
-                <div class="customers_line-bold">
-
-                </div>
-                <div class="customers_subtitle flex_customers-start">
-                    <img class="customers_icon" src="./img/customers/Icon_2.svg" alt="icon_2">
-                    <p class="customers_subtitle_text">
-                        Engage users
+                <div class="customers_items">
+                    <div class="customers_subtitle flex_customers-start">
+                        <img class="customers_icon" src="./img/customers/Icon_2.svg" alt="icon_2">
+                        <p class="customers_subtitle_text">
+                            Engage users
+                        </p>
+                    </div>
+                    <p class="customers_text">
+                        Everything you need to start building – including open-source code, documentation.
                     </p>
+                    <div class="customers_line">
+                    </div>
                 </div>
-                <div class="customers_line">
 
-                </div>
-               
-                <div class="customers_subtitle flex_customers-start">
-                    <img class="customers_icon" src="./img/customers/Icon_3.svg" alt="icon_3">
-                    <p class="customers_subtitle_text">
-                        Develop across platforms
+                <div class="customers_items">  
+                    <div class="customers_subtitle flex_customers-start">
+                        <img class="customers_icon" src="./img/customers/Icon_3.svg" alt="icon_3">
+                        <p class="customers_subtitle_text">
+                            Develop across platforms
+                        </p>
+                    </div>
+                    <p class="customers_text">
+                        Everything you need to start building – including open-source code, documentation.
                     </p>
-                </div>
-                <div class="customers_line">
+                    <div class="customers_line">
+                    </div>
+                </div> 
 
-                </div>
                 <div class="customers-img">
                     <img class="customers-img_small" src="./img/customers/ouch.svg" alt="customers-img_small">
-    
                 </div>
-              
             </div>
             <div class="customers-image">
                 <img class="customers-image_img" src="./img/customers/Image_1.png" alt="customers_img">
-
             </div>
         </div>
     </section>
 
-   
     <section class="inbox">
         <div class="container flex flex_inbox-column">
             <div class="container-image animations">
                 <img class="container-image_img" src="./img/inbox/ouch.svg" alt="img_inbox">
-
             </div>
             <div class="info">
                 <p class="info_pretitle info_pretitle-orange">
@@ -223,11 +225,9 @@
                     Three products that can be used independently or combined together for your company’s needs.
                 </p>
                 <button class="button">Get Started</button>
-                
             </div>
             <div class="container-image container-image-margin animations">
                 <img class="container-image_img" src="./img/box/ouch.png" alt="img_box">
-
             </div>
         </div>
        
@@ -239,7 +239,6 @@
                 <p>
                     <a class="communication_link" href="#">Learn more about subscriptions</a>
                 </p>
-
             </div>
             <div class="communication-block">
                 <p class="communication_text">
@@ -248,7 +247,6 @@
                 <p>
                     <a class="communication_link" href="#">Get more info about hours</a>
                 </p>
-
             </div>
             <div class="communication-block">
                 <p class="communication_text">
@@ -257,7 +255,6 @@
                 <p>
                     <a class="communication_link" href="#">Communication guidelines</a>
                 </p>
-
             </div>
         </div>
     </section>
@@ -283,7 +280,6 @@
                     </button>
                 </div>
             </div>
-                                  
             <div class="visitors_grid">
                 <div class="visitors_item">
                     <img src="./img/grid_1/image_1.png" alt="image_1">
@@ -332,7 +328,6 @@
                     <p class="carusel_pretitle">
                         Trusted by the world’s most innovative businesses – big and small
                     </p>
-                    
                     <p class="carusel_text">
                         “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
                     </p>
@@ -343,7 +338,7 @@
                         <p class="carusel_position">
                             Creative Director at Johnson
                         </p>
-                </div> 
+                    </div> 
                 </div>
 
                 <div class="carusel_block">
@@ -363,11 +358,11 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="carusel_block">
                     <p class="carusel_pretitle">
                         Trusted by the world’s most innovative businesses – big and small
                     </p>
-                    
                     <p class="carusel_text">
                         “Comprehensive set of startup tools for all imaginable entrepreneurial needs. 
                     </p>
@@ -375,16 +370,14 @@
                         <p class="carusel_name">
                             Viella Malkovich  
                         </p>
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="reviews-img">
                 <img class="reviews-img_small" src="./img/reviews/ouch.png" alt="reviews-img_small">
-
             </div>
         </div>
     </section>
-
 
     <section id="about" class="about">
         <div class="container">
@@ -395,7 +388,6 @@
                 <p class="about_desc">
                     We’re a team of lifelong learners. We’re equal parts left and right brained.
                 </p>
-            
                 <button class="button about_button">
                     More about Company
                 </button>
@@ -465,7 +457,6 @@
         </div>
     </section>
 
-
     <section class="gallery">
         <div class="container">
             <h3 class="gallery_title">
@@ -490,7 +481,6 @@
         <div class="container flex_start-trial-evenly flex_start-trial-column start-trial_block">
             <div start-trial_image >
                 <img src="./img/start-trial/window.png" alt="window">
-
             </div>
             <div class="start-trial_info">
                 <h4 class="start-trial_title">
@@ -507,11 +497,9 @@
                 </button>
 
                 <div class="start-trial_content">
-                                        
                     <p class="start-trial_terms">
                         Free 14-day trial · Easy setup · Cancel any time. Check out <a class="start-trial_terms-blue" href="#">Terms of Use.</a>
                     </p>
-
                     <div>
                         <label>
                             <span class="text">I agree</span>
@@ -546,7 +534,6 @@
                         <img src="./img/footer/AppStore.png" alt="AppStore">
                         <img src="./img/footer/Google Play.png" alt="Google Play">
                     </div>
-                
                 </div>    
                 <div>
                     <h6 class="footer_title">
@@ -567,7 +554,6 @@
                     <p class="footer_text">Press Kit</p>
                     <p class="footer_text">Support</p>
                 </div>
-                
             </div>
             <div class="flex flex_footer-column">
                 <div class="flex footer_slogan">
@@ -580,18 +566,15 @@
                     <p>
                         License
                     </p>
-
                 </div>
                 <div class="flex footer_icon">
                     <img src="./img/footer/icon-twitter.png" alt="icon-twitter">
                     <img src="./img/footer/icon-fb.png" alt="icon-fb">
                     <img src="./img/footer/LinkedIn.png" alt="LinkedIn.png">
-
                 </div>
             </div>
         </div>
     </footer>
-
 
     <div class="modal-overlay">
         <div class="modal">
@@ -607,7 +590,6 @@
     <div id="up">
         <span>></span>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

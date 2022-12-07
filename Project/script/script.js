@@ -8,3 +8,13 @@ $(this).next('.about-text').slideToggle(300);
 
 })
 
+$('.customers_items>div').on('click',function(){
+    $(this).find('.customers_subtitle_text').toggleClass('customers_subtitle_tex-color');
+    $(this).next('.customers_text').slideToggle(300);
+    
+})
+
+$('.customers_items').on('click',function(){
+    $(this).find('.customers_line').toggleClass('customers_line-color');
+       
+})
