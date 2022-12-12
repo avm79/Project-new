@@ -318,6 +318,11 @@ body{
 
 }
 
+.flex_start{
+    justify-content: flex-start;
+
+}
+
 .info_pretitle{
     font-weight: bold;
     font-size: 22px;
